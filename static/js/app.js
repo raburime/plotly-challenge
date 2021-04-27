@@ -41,5 +41,28 @@ function createCharts() {
           
           Plotly.newPlot('bar', data);
     });
+
+    console.log(sample);
+
+    var data = [
+        x: otu_ids,
+        y: sample_values,
+        mode: markers,
+        marker: otu_ids {
+          size: [40, 60, 80, 100]
+        }
+      ];
+      
+      var data = [trace1];
+      
+      var layout = {
+        title: otu_ids,
+        showlegend: false,
+        height: 600,
+        width: 600
+      };
+      
+      Plotly.newPlot('bubble', data, layout);
+    )
 };
 
